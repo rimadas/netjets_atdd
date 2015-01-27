@@ -4,8 +4,8 @@ Feature: Memory
   all exist.
 
   Scenario: Store and retrieve a result
-    Given I have done some arithmetic
-    And I have cleared the screen
+    Given I have entered <4> into the calculator
+    And I have entered <5> into the calculator
     When I press recall
     Then I should see the previously stored result
 
