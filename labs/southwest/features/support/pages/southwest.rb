@@ -1,9 +1,7 @@
-require PageObject::PageFactory
+include PageObject::PageFactory
+
 class Southwest
   include PageObject
   page_url "https://www.southwest.com"
-  text_field(:from, :id => '')
-  select(:to, :id => '')
-  button(:, :name => '')
-
+  a(:open_flight_schedule,:class => 'swa-footer--item', :text=>"Flight Schedules")
 end
