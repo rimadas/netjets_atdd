@@ -13,7 +13,7 @@ Feature: Subtraction
   Scenario Outline: Subtraction properties
     Given I have entered <input_1> into the calculator
     And I have entered <input_2> into the calculator
-    When I press <button>
+    When press <button>
     Then the result should be <output>
   Examples:
     | input_1 | input_2 | button      | output |
