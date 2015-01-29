@@ -8,9 +8,9 @@ module SurveyInteractions
 
   def submit_valid_survey_info
     on_page Survey do |page|
-      page.name = 'your name'
-      page.language = 'Ruby'
-      page.submit
+      page.uid = 'rdas'
+      page.pwd = 'xyz123'
+      page.login
     end
     sleep 2
   end
