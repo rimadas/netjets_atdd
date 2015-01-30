@@ -22,8 +22,8 @@ class AboutMethods < Test::Unit::TestCase
   end
 
   def test_calling_with_default_values
-    assert_equal [1, __], method_with_defaults(1)
-    assert_equal [1, __], method_with_defaults(1, 2)
+    assert_equal [1,:default_value], method_with_defaults(1)
+    assert_equal [1,:a, :b], method_with_defaults(1, 2)
   end
 
   # ------------------------------------------------------------------
@@ -38,7 +38,7 @@ class AboutMethods < Test::Unit::TestCase
   end
 
   def test_method_with_explicit_return
-    assert_equal __, method_with_explicit_return
+    assert_equal [method_with_explicit_return], method_with_explicit_return
   end
 
 
