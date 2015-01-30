@@ -44,7 +44,7 @@ end
 
 def get_first_payment_entry
   on_page Paymenthistory do |page|
-    page.pay_amt_history
+    page.first_payment
   end
 end
 

@@ -40,3 +40,7 @@ end
 Then(/^I see a warning message that "([^"]*)"$/) do |arg|
   # Verify that there is a warning message "Not Sufficient Balance"
 end
+
+And(/^I see the entry of the old payment history$/) do
+  pending
+end
